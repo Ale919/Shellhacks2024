@@ -1,12 +1,9 @@
 // server.js
 
-// Import the express module
 const express = require('express');
-
-// Create an instance of express
 const app = express();
 
-// Define a route for the home page
+// Define the home route
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
@@ -23,7 +20,6 @@ app.get('/api/data', (req, res) => {
     data: [1, 2, 3, 4, 5]
   });
 });
-
 
 // Start the server
 const PORT = process.env.PORT || 3000;
